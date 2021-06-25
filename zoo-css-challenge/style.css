@@ -64,12 +64,20 @@ button {
   display: inline-block;
   border-radius: 3px;
   cursor: pointer;
-  padding: 10px 20px;
+  padding: 20px 30px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
-  background-color: #372772;
+  background-color: #b5a6e9;
   border: 2px solid black;
   color: #fff;
+  font-size:18px;
 }
+.button:hover{
+  background-color:green;
+}
+.button:focus{
+  background-color:white;
+}
+
 
 
 /*Introduction*/
@@ -84,20 +92,25 @@ button {
 
   /*Bears*/
 
- .bears img.red{
-   border: 1px solid red;
- }
- .bears img.green{
-  border: 1px solid green;
+.image-container{
+  display:flex;
+  justify-content: space-between;
+  
 }
-.bears img.blue{
-  border: 1px solid blue;
-}
+  
+  .image-container img:nth-child(1) {
+    border: 2px solid red;
+    
+   
+  }
+  .image-container img:nth-child(2) {
+    border: 2px solid green;
+    
+  }
+  .image-container img:nth-child(3) {
+    border: 2px solid black;
+   }
 
-.bears img {
-  display:inline-block;
-  margin-top: 0px;
-}
 
 /*Badge*/
 
@@ -108,7 +121,7 @@ button {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top:15px;
   right: 20px;
 
   display: flex;
@@ -207,6 +220,7 @@ button {
 .education-container p {
   margin-bottom: 1em;
 }
+
 
 /*Membership*/
 
